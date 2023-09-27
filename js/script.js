@@ -5,17 +5,20 @@ createApp({
     return {
       firstName: 'Massimo',
       lastName: 'Azzini',
-      textHtml: ''
+      textHtml: '',
+      image: 'Dany.jpg'
     }
   },
 
-  method: {
+  methods: {
+
     newTextHtml(){
       this.textHtml = `<h1>Mi chiamo: ${this.firstName} ${this.lastName}</h1>`;
     }
   },
 
   mounted(){
+
     this.newTextHtml();
   }
 
